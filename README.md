@@ -7,7 +7,7 @@ Now available next post services:
 The list of post services will be expanded.
 
 # Requirements
-PHP 5.5+
+PHP 5.5+  
 Wordpress 4
 
 # Install
