@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-07-26 14:52+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"Language: ru\n"
+"X-Generator: Poedit 1.8.3\n"
+"Project-Id-Version: \n"
+"Last-Translator: \n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "Ukrpost"
+msgstr "Укрпочта"
+
+msgid "New Post"
+msgstr "Новая почта"
+
+msgid "Enter the track code"
+msgstr "Введите код ТТН"
+
+msgid "grn"
+msgstr "грн."
+
+msgid "Wrong delivery service"
+msgstr "Не верная служба доставки"
+
+msgid "Wrong track code format"
+msgstr "Код ТТН не соответствует формату"
+
+msgid "Response error"
+msgstr "Ошибка получения ответа"
+
+msgid "Tracking code is missed"
+msgstr "Отсутствует код ТТН"
+
+msgid "Delivery service do not selected"
+msgstr "Не выбрана служба доставки"
+
+msgid "Sending in processing or wrong code"
+msgstr ""
+"Отправление в процессе обработки или не верный код ТТН. \n"
+"Перепроверьте код или попробуйте позже."
+
+msgid "Sending is preparing to send"
+msgstr "Отправление готовится к отправке."
+
+msgid "Delivery address"
+msgstr "Адрес доставки: "
+
+msgid "Cost of delivery"
+msgstr "Стоимость доставки: "
+
+msgid "Sending is sent to the destination"
+msgstr "Отправление направляется в пункт назначения."
+
+msgid "Waiting for targeted delivery"
+msgstr "Отправление прибыло в пункт назначения. Ожидайте адресной доставки."
+
+msgid "Sending arrived"
+msgstr "Отправление прибыло."
+
+msgid "Sending received"
+msgstr "Отправление получено"

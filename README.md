@@ -1,5 +1,5 @@
 # Track Delivery
-Post services tracking Wordpress widget.  
+Post services delivery tracking Wordpress widget.  
 Now available next post services:
 - Ukrpost (Укрпошта)
 - New Post (Нова пошта)

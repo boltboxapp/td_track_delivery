@@ -1,0 +1,16 @@
+#td-track-code{
+    float: left;
+    width: 75%;
+}
+
+#td-delivery-check input[type='submit']{
+    width: 25%
+}
+
+#td-track-response{
+    font-size: 16px;
+}
+
+#td-track-response.error{
+    color: #BB3333;
+}
