@@ -35,6 +35,6 @@ class View
             return ob_get_clean();
         }
         
-        throw new TrackDeliveryException('Файл шаблона не найден!');
+        throw new TrackDeliveryException('Template file not found');
     }
 }
