@@ -10,11 +10,11 @@ Version: 1.0
 License: MIT
 */
 
-define('TD_PLUGIN_URL',  plugin_dir_url( __FILE__ ));
+define('TD_PLUGIN_URL',  plugin_dir_url(  __FILE__ ));
 define('TD_PLUGIN_DIR',  plugin_dir_path( __FILE__ ));
 define('TD_INCLUDE_DIR', plugin_dir_path( __FILE__ ) . 'inc/');
 define('TD_VIEWS_DIR',   plugin_dir_path( __FILE__ ) . 'views/');
-define('TD_ASSETS_DIR',  plugin_dir_url( __FILE__ ) . 'assets/');
+define('TD_ASSETS_DIR',  plugin_dir_url(  __FILE__ ) . 'assets/');
 define('TD_LANG_DIR', dirname( plugin_basename( __FILE__ ) ) . '/lang/');
 
 // ID of translate file
@@ -30,7 +30,7 @@ include_once(TD_INCLUDE_DIR . 'IDeliveryService.php');
 include_once(TD_INCLUDE_DIR . 'DeliveryServices/UkrPostService.php');
 include_once(TD_INCLUDE_DIR . 'DeliveryServices/NewPostService.php');
 
-wp_register_style( 	'td-style', TD_ASSETS_DIR . 'css/style.css' );
+wp_register_style(  'td-style', TD_ASSETS_DIR . 'css/style.css' );
 wp_register_script( 'td-tracker-client-script', TD_ASSETS_DIR . 'js/tracker_client.js', ['jquery'] );
 wp_register_script( 'td-main-script', TD_ASSETS_DIR . 'js/main.js', ['jquery', 'td-tracker-client-script'] );
 
