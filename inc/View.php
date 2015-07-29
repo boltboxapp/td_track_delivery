@@ -8,11 +8,11 @@
 class View
 {
     // Reference to an instance of WP_Widget
-    private $_widget_instance = null;
+    private $_widget_instance;
     
-    public function setWidgetInstance(WP_Widget &$instance)
+    public function __construct()
     {
-        $this->_widget_instance = $instance;
+        $this->_widget_instance = TrackDeliveryWidget::getInstance();
     }
     
     /**

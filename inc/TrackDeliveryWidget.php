@@ -9,6 +9,7 @@
 class TrackDeliveryWidget extends WP_Widget
 {
     const BASE_ID = 'tm_td';
+    private static $_instance;
 
     public function __construct()
     {
@@ -17,6 +18,9 @@ class TrackDeliveryWidget extends WP_Widget
             'description' => 'Виджет отслеживания доставки по трек-коду',
             'classname'   => 'td-delivery'
         ]);
+        
+        // Save instance (last) of widget
+        self::$_instance = $this;
     }
 
     /**
@@ -51,9 +55,7 @@ class TrackDeliveryWidget extends WP_Widget
      */
     public function form($instance)
     {
-        $backend_view = new View();
-        $backend_view->setWidgetInstance($this);
-        echo $backend_view->make('backend', $instance);
+        echo (new View())->make('backend', $instance);
     }
 
     /**
@@ -64,11 +66,25 @@ class TrackDeliveryWidget extends WP_Widget
      */
     public function update($new_instance, $old_instance)
     {
+        // Clean data before save
         $new_instance['title'] = !empty($new_instance['title']) ? strip_tags($new_instance['title']) : '';
         $new_instance['newpost_apikey'] = isset($new_instance['newpost_apikey']) ? strip_tags($new_instance['newpost_apikey']) : '';
         $new_instance['ukrpost_guid']   = isset($new_instance['ukrpost_guid'])   ? strip_tags($new_instance['ukrpost_guid'])   : '';
 
         return $new_instance;
+    }
+
+    /**
+     * Getting instance of this class
+     * @return object
+     */
+    public static function getInstance()
+    {
+        if (!self::$_instance instanceOf self)
+            throw new TrackDeliveryException('You must create an instance of the ' .
+                      __CLASS__ . ' class to use this method');
+        
+        return self::$_instance;
     }
 
     /**
